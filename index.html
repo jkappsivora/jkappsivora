@@ -1,0 +1,690 @@
+<!-- Om Namasivaya -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="JK AppSivora - Software, Mobile App, Web Development, AI Solutions, and Digital Transformation Services. Transforming ideas into powerful digital solutions.">
+    <meta name="keywords"
+        content="Software Development, Mobile App, Web Applications, AI Solutions, UI/UX, Cloud Services, JK AppSivora">
+    <meta name="author" content="JK AppSivora">
+    <title>JK AppSivora | Transforming Ideas Into Powerful Digital Solutions</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Devicon Brand Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Header / Navbar -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" class="logo-link">
+                <img src="assets/logo-light.jpg" alt="JK AppSivora Logo" class="logo-img">
+                <span class="logo-text">JK AppSivora</span>
+            </a>
+
+            <!-- Mobile Menu Toggle Button (Pure CSS Hamburguer) -->
+            <button class="menu-toggle" aria-label="Toggle Navigation" id="menuToggle">
+                <span class="hamburger-line line-1"></span>
+                <span class="hamburger-line line-2"></span>
+                <span class="hamburger-line line-3"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Products</a></li>
+                    <li><a href="#why-choose-us" class="nav-link">Why Us</a></li>
+                    <li><a href="#technologies" class="nav-link">Tech</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-cta-wrapper">
+                    <a href="#contact" class="btn btn-primary btn-sm">Get Started</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <!-- Canvas for dynamic particle network -->
+        <canvas id="particleCanvas" class="hero-canvas"></canvas>
+
+        <div class="container hero-container">
+            <div class="hero-content scroll-reveal">
+                <span class="hero-badge">Mobile App & Software Products</span>
+                <h1 class="hero-title">Transforming Ideas Into <br><span class="gradient-text" id="typingText">Mobile
+                        Apps</span><span class="typing-cursor">|</span></h1>
+                <p class="hero-subtitle">We design, engineer, and scale proprietary mobile applications, custom software
+                    suites, and SaaS products that solve complex challenges.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">
+                        Get Started
+                        <i data-lucide="arrow-right" class="btn-icon"></i>
+                    </a>
+                    <a href="#about" class="btn btn-outline">
+                        Explore Products
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual scroll-reveal" id="heroVisual">
+                <div class="glow-sphere sphere-1"></div>
+                <div class="glow-sphere sphere-2"></div>
+                <div class="tech-graphic">
+                    <div class="card-glass graphic-card main-card">
+                        <div class="graphic-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="graphic-body">
+                            <pre><code><span class="keyword">const</span> appsivora = {
+  focus: <span class="string">"Mobile Apps & Software"</span>,
+  lifecycle: [<span class="string">"Design"</span>, <span class="string">"Code"</span>, <span class="string">"Scale"</span>],
+  delivery: <span class="string">"Product-Grade"</span>
+};</code></pre>
+                        </div>
+                    </div>
+                    <div class="float-wrapper secondary-wrapper">
+                        <div class="card-glass graphic-card secondary-card">
+                            <i data-lucide="smartphone" class="tech-card-icon"></i>
+                            <h4>Mobile First UX</h4>
+                        </div>
+                    </div>
+                    <div class="float-wrapper tertiary-wrapper">
+                        <div class="card-glass graphic-card tertiary-card">
+                            <i data-lucide="layers" class="tech-card-icon"></i>
+                            <h4>Software Architecture</h4>
+                            <span class="tech-card-desc">High-Performance Core</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="grid-2">
+                <div class="about-visual scroll-reveal">
+                    <div class="about-img-container">
+                        <div class="image-overlay-glow"></div>
+                        <img src="assets/logo-light.jpg" alt="About JK AppSivora" class="about-featured-img">
+                        <!-- Stats Grid over images -->
+                        <div class="about-stats-overlay">
+                            <div class="stat-badge card-glass">
+                                <span class="stat-num">50+</span>
+                                <span class="stat-lbl">Products Shipped</span>
+                            </div>
+                            <div class="stat-badge card-glass">
+                                <span class="stat-num">99%</span>
+                                <span class="stat-lbl">App Store Review</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content scroll-reveal">
+                    <span class="section-badge">Product Engineering</span>
+                    <h2 class="section-title">About JK AppSivora</h2>
+                    <p class="section-desc">
+                        JK AppSivora is a premier product-based engineering firm specializing in developing innovative
+                        mobile applications, custom software architectures, and scalable cloud products.
+                    </p>
+                    <p class="section-subdesc">
+                        We govern the complete product lifecycle—from user experience research, native/cross-platform
+                        mobile programming (iOS & Android), to heavy-duty backend engineering and cloud deployments. Our
+                        focus is on building robust digital tools that automate workflows and elevate user experience.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature-item">
+                            <div class="about-icon-box">
+                                <i data-lucide="smartphone"></i>
+                            </div>
+                            <div>
+                                <h5>Mobile-First Strategy</h5>
+                                <p>Optimized user flows, micro-interactions, offline availability, and high-performance
+                                    native bridges.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="about-icon-box">
+                                <i data-lucide="shield-check"></i>
+                            </div>
+                            <div>
+                                <h5>Product-Grade Security</h5>
+                                <p>End-to-end data encryption, identity access management, and automated test
+                                    integration loops.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-badge">Capabilities</span>
+                <h2 class="section-title">Our Product Verticals</h2>
+                <p class="section-subtitle">We design and build proprietary digital products that solve complex
+                    technical problems and scale with your growth.</p>
+            </div>
+
+            <div class="services-grid scroll-reveal">
+                <!-- Service 1 -->
+                <div class="card-glass service-card">
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="smartphone" class="service-icon"></i>
+                    </div>
+                    <h3>Proprietary Mobile Products</h3>
+                    <p>High-end native iOS & Android applications engineered using Flutter and React Native for fluid
+                        120Hz micro-interactions.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="card-glass service-card">
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="code-2" class="service-icon"></i>
+                    </div>
+                    <h3>Custom Software Suites</h3>
+                    <p>Modular, high-performance software architectures optimized for complex business logic, security
+                        compliance, and high throughput.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="card-glass service-card">
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="layout-grid" class="service-icon"></i>
+                    </div>
+                    <h3>SaaS & Web Platforms</h3>
+                    <p>Multi-tenant cloud applications, dashboard portals, and real-time visualization platforms serving
+                        lightning-fast static assets.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="card-glass service-card">
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="palette" class="service-icon"></i>
+                    </div>
+                    <h3>Product UI/UX Prototyping</h3>
+                    <p>User research mapping, high-fidelity dynamic prototyping, and design systems customized for
+                        product retention.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="card-glass service-card">
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="cpu" class="service-icon"></i>
+                    </div>
+                    <h3>AI & Predictive Engines</h3>
+                    <p>Custom machine learning algorithms, retrieval-augmented generation (RAG) cores, and LLM
+                        integrations directly inside products.</p>
+                </div>
+                <!-- Service 6 -->
+                <div class="card-glass service-card">
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="cloud-lightning" class="service-icon"></i>
+                    </div>
+                    <h3>Cloud Scaling & DevOps</h3>
+                    <p>Automated deployment pipelines, secure multi-region failovers, and cloud infrastructure
+                        optimization on AWS/GCP.</p>
+                </div>
+                <!-- Service 7 -->
+                <div class="card-glass service-card">
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="git-branch" class="service-icon"></i>
+                    </div>
+                    <h3>Core API Architectures</h3>
+                    <p>High-performance REST & GraphQL API services designed to bridge client ecosystems with robust
+                        backend databases.</p>
+                </div>
+                <!-- Service 8 -->
+                <div class="card-glass service-card">
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="life-buoy" class="service-icon"></i>
+                    </div>
+                    <h3>Lifecycle SLA & Maintenance</h3>
+                    <p>Continuous security patches, version migrations, performance telemetry analytics, and
+                        round-the-clock product support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us-section" id="why-choose-us">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-badge">Our Edge</span>
+                <h2 class="section-title">Why Choose Us</h2>
+                <p class="section-subtitle">We don't just write code; we partner in your long-term success and digital
+                    growth.</p>
+            </div>
+
+            <div class="why-grid scroll-reveal">
+                <!-- Feature 1 -->
+                <div class="card-glass why-card">
+                    <div class="why-icon-box">
+                        <i data-lucide="users" class="why-icon"></i>
+                    </div>
+                    <h4>Experienced Developers</h4>
+                    <p>Our senior team has years of deep domain experience building complex enterprise systems and
+                        high-scale apps.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="card-glass why-card">
+                    <div class="why-icon-box">
+                        <i data-lucide="terminal" class="why-icon"></i>
+                    </div>
+                    <h4>Modern Technologies</h4>
+                    <p>We leverage cutting-edge tech stacks that ensure security, robustness, high speeds, and
+                        maintainability.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="card-glass why-card">
+                    <div class="why-icon-box">
+                        <i data-lucide="rocket" class="why-icon"></i>
+                    </div>
+                    <h4>Fast Delivery</h4>
+                    <p>Using agile methodologies, we deliver functional iterations quickly without compromising visual
+                        or code quality.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="card-glass why-card">
+                    <div class="why-icon-box">
+                        <i data-lucide="expand" class="why-icon"></i>
+                    </div>
+                    <h4>Scalable Solutions</h4>
+                    <p>We architect our systems with modular architectures, ensuring they handle thousands of users
+                        seamlessly as you scale.</p>
+                </div>
+                <!-- Feature 5 -->
+                <div class="card-glass why-card">
+                    <div class="why-icon-box">
+                        <i data-lucide="check-circle-2" class="why-icon"></i>
+                    </div>
+                    <h4>Quality Assurance</h4>
+                    <p>We perform rigorous unit testing, integration tests, and security scanning throughout our product
+                        cycles.</p>
+                </div>
+                <!-- Feature 6 -->
+                <div class="card-glass why-card">
+                    <div class="why-icon-box">
+                        <i data-lucide="heart-handshake" class="why-icon"></i>
+                    </div>
+                    <h4>Client-Focused Approach</h4>
+                    <p>Your business goals guide our developers. We align closely with your objectives to maximize
+                        project ROI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="tech-section" id="technologies">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-badge">Stack</span>
+                <h2 class="section-title">Technologies We Master</h2>
+                <p class="section-subtitle">We employ industry-leading, battle-tested technologies to build solid
+                    products.</p>
+            </div>
+
+            <!-- Tech Tab System -->
+            <div class="tech-tabs-wrapper scroll-reveal">
+                <div class="tech-tabs-list">
+                    <button class="tech-tab-btn active" data-tab="frontend">Frontend</button>
+                    <button class="tech-tab-btn" data-tab="backend">Backend</button>
+                    <button class="tech-tab-btn" data-tab="mobile">Mobile</button>
+                    <button class="tech-tab-btn" data-tab="database">Database</button>
+                    <button class="tech-tab-btn" data-tab="cloud">Cloud</button>
+                </div>
+
+                <div class="tech-tabs-content">
+                    <!-- Frontend Panel -->
+                    <div class="tech-panel active" id="frontend">
+                        <div class="tech-badges-grid">
+                            <div class="tech-badge-card">
+                                <i class="devicon-react-original colored tech-icon"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="tech-badge-card">
+                                <i class="devicon-nextjs-plain colored tech-icon"></i>
+                                <span>Next.js</span>
+                            </div>
+                            <div class="tech-badge-card">
+                                <i class="devicon-html5-plain colored tech-icon"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="tech-badge-card">
+                                <i class="devicon-css3-plain colored tech-icon"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="tech-badge-card">
+                                <i class="devicon-javascript-plain colored tech-icon"></i>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Panel -->
+                    <div class="tech-panel" id="backend">
+                        <div class="tech-badges-grid">
+                            <div class="tech-badge-card">
+                                <i class="devicon-nodejs-plain colored tech-icon"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="tech-badge-card">
+                                <i class="devicon-python-plain colored tech-icon"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-badge-card">
+                                <i class="devicon-php-plain colored tech-icon"></i>
+                                <span>PHP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Panel -->
+                    <div class="tech-panel" id="mobile">
+                        <div class="tech-badges-grid">
+                            <div class="tech-badge-card">
+                                <i class="devicon-flutter-plain colored tech-icon"></i>
+                                <span>Flutter</span>
+                            </div>
+                            <div class="tech-badge-card">
+                                <i class="devicon-react-original colored tech-icon"></i>
+                                <span>React Native</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database Panel -->
+                    <div class="tech-panel" id="database">
+                        <div class="tech-badges-grid">
+                            <div class="tech-badge-card">
+                                <i class="devicon-mongodb-plain colored tech-icon"></i>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="tech-badge-card">
+                                <i class="devicon-mysql-plain colored tech-icon"></i>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="tech-badge-card">
+                                <i class="devicon-postgresql-plain colored tech-icon"></i>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud Panel -->
+                    <div class="tech-panel" id="cloud">
+                        <div class="tech-badges-grid">
+                            <div class="tech-badge-card">
+                                <i class="devicon-amazonwebservices-plain colored tech-icon"></i>
+                                <span>AWS</span>
+                            </div>
+                            <div class="tech-badge-card">
+                                <i class="devicon-firebase-plain colored tech-icon"></i>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-badge">Case Studies</span>
+                <h2 class="section-title">Featured Portfolio</h2>
+                <p class="section-subtitle">Take a look at some of the digital ecosystems we have recently created.</p>
+            </div>
+
+            <div class="portfolio-grid scroll-reveal">
+                <!-- Project 1 -->
+                <div class="card-glass portfolio-card">
+                    <div class="portfolio-visual-mock">
+                        <img src="assets/product-healthcare.png" alt="Pulse Diagnostics Portal" class="portfolio-img">
+                        <div class="project-overlay-glow"></div>
+                        <span class="portfolio-category">AI Healthcare</span>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Pulse Diagnostics Portal</h3>
+                        <p>An interactive, secure clinical portal driven by AI models to predict diagnostics and
+                            streamline physician schedules.</p>
+                        <div class="portfolio-tags">
+                            <span>Next.js</span>
+                            <span>Python</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card-glass portfolio-card">
+                    <div class="portfolio-visual-mock">
+                        <img src="assets/product-ecommerce.png" alt="Travel App" class="portfolio-img">
+                        <div class="project-overlay-glow"></div>
+                        <span class="portfolio-category">Mobile Product</span>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Travel App</h3>
+                        <p>A custom Flutter Travel app with high performance animations, offline mode.</p>
+                        <div class="portfolio-tags">
+                            <span>Flutter</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card-glass portfolio-card">
+                    <div class="portfolio-visual-mock">
+                        <img src="assets/product-dashboard.png" alt="Apex Analytics Dashboard" class="portfolio-img">
+                        <div class="project-overlay-glow"></div>
+                        <span class="portfolio-category">SaaS Platform</span>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Apex Analytics Dashboard</h3>
+                        <p>Real-time analytics engine and financial reporting platform handling millions of webhooks
+                            hourly with custom metrics visualization.</p>
+                        <div class="portfolio-tags">
+                            <span>React</span>
+                            <span>Go</span>
+                            <span>AWS Cloud</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="grid-2">
+                <div class="contact-info-wrapper scroll-reveal">
+                    <span class="section-badge">Let's Connect</span>
+                    <h2 class="section-title">Have a Project in Mind?</h2>
+                    <p class="section-desc">
+                        Reach out to our experts today. Whether you have a detailed specification document or just an
+                        idea on a napkin, we help you shape it.
+                    </p>
+
+                    <div class="contact-details-list">
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="detail-text">
+                                <h6>Email Us</h6>
+                                <a href="mailto:jkappsivora@gmail.com">jkappsivora@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="detail-text">
+                                <h6>Call Us</h6>
+                                <a href="tel:+917339557145">+91 XXXXX XXXXX</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="detail-text">
+                                <h6>Location</h6>
+                                <span>4 A1,S.P. PUDUR,PERIYAPATTI ROAD , SUBIANE6,TAMIL NADU, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper scroll-reveal">
+                    <div class="card-glass contact-card">
+                        <h4 class="form-title">Send a Message</h4>
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="user" class="input-icon"></i>
+                                    <input type="text" id="name" name="name" placeholder="Enter Name" required>
+                                </div>
+                                <span class="error-msg" id="nameError">Name is required</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="mail" class="input-icon"></i>
+                                    <input type="email" id="email" name="email" placeholder="Enter Email-Id" required>
+                                </div>
+                                <span class="error-msg" id="emailError">Please enter a valid email</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="phone" class="input-icon"></i>
+                                    <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number" required>
+                                </div>
+                                <span class="error-msg" id="phoneError">Phone number is required</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Project Brief</label>
+                                <textarea id="message" name="message" rows="4"
+                                    placeholder="Tell us about your application requirements..." required></textarea>
+                                <span class="error-msg" id="messageError">Message is required</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">
+                                Send Message
+                                <i data-lucide="send" class="btn-icon"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <a href="#" class="logo-link">
+                    <img src="assets/logo-light.jpg" alt="JK AppSivora Logo" class="logo-img">
+                    <span class="logo-text">JK AppSivora</span>
+                </a>
+                <p class="footer-desc">Building scalable, secure, and future-ready digital architectures for enterprises
+                    and startups globally.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="#" class="social-link" aria-label="GitHub"><i data-lucide="github"></i></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#why-choose-us">Why Us</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Software Development</a></li>
+                    <li><a href="#services">Mobile App Dev</a></li>
+                    <li><a href="#services">Web Applications</a></li>
+                    <li><a href="#services">AI Integrations</a></li>
+                    <li><a href="#services">UI/UX Design</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Stay up to date with new software engineering insights and trends.</p>
+                <!-- <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Email Address" required aria-label="Newsletter email">
+                    <button type="submit" aria-label="Subscribe"><i data-lucide="arrow-right"></i></button>
+                </form> -->
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 JK AppSivora. All Rights Reserved.</p>
+            <!-- <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div> -->
+        </div>
+    </footer>
+
+    <!-- Success Toast Notification -->
+    <div class="toast-notification" id="toastNotification">
+        <div class="toast-content">
+            <i data-lucide="check-circle" class="toast-icon"></i>
+            <div>
+                <h6>Message Sent Successfully!</h6>
+                <p>We will get back to you within 24 hours.</p>
+            </div>
+        </div>
+        <button class="toast-close" id="toastClose">&times;</button>
+    </div>
+
+    <!-- Main JavaScript Code -->
+    <script src="script.js"></script>
+</body>
+
+</html>
